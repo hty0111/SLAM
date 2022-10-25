@@ -5,8 +5,9 @@ project(Project)
 
 #include_directories( "/usr/include/eigen3" )
 
-find_package(Eigen3)
+find_package(Eigen3 REQUIRED)
 find_package(Pangolin REQUIRED)
+
 include_directories(
         ${EIGEN3_INCLUDE_DIRS}
         ${Pangolin_INCLUDE_DIRS}
