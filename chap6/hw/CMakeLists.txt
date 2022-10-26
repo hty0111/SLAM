@@ -19,10 +19,8 @@ find_package(g2o REQUIRED)
 
 include_directories(${EIGEN3_INCLUDE_DIRS})
 
-add_executable(gaussNewton gaussNewton.cpp)
-add_executable(ceresFitting ceresFitting.cpp)
-add_executable(g2oFitting g2oFitting.cpp)
+add_executable(5_1 5_1.cpp)
+add_executable(5_2 5_2.cpp)
 
-target_link_libraries(gaussNewton ${OpenCV_LIBS})
-target_link_libraries(ceresFitting ${OpenCV_LIBS} ${CERES_LIBRARIES})
-target_link_libraries(g2oFitting ${OpenCV_LIBS} g2o_core g2o_stuff)
+target_link_libraries(5_1 ${CERES_LIBRARIES})
+target_link_libraries(5_2 ${CERES_LIBRARIES})
