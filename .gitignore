@@ -5,3 +5,4 @@ build
 *make*
 !CMakeLists.txt
 3rdparty
+*slambook*

@@ -9,20 +9,20 @@ set(CMAKE_CXX_FLAGS "-std=c++11 -O3")
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(Pangolin REQUIRED)
-#find_package(PCL REQUIRED COMPONENT common io)
+find_package(PCL REQUIRED COMPONENT common io)
 
 include_directories(
         ${OpenCV_INCLUDE_DIRS}
         ${EIGEN3_INCLUDE_DIRS}
-        #        ${PCL_INCLUDE_DIRS}
+        ${PCL_INCLUDE_DIRS}
 )
 
 #add_definitions(${PCL_DEFINITIONS})
 
-add_executable(stereo stereo.cpp)
+add_executable(joinMap joinMap.cpp)
 target_link_libraries(
-        stereo
+        joinMap
         ${OpenCV_LIBS}
         ${Pangolin_LIBRARIES}
-        #        ${PCL_LIBRARIES}
+        ${PCL_LIBRARIES}
 )
