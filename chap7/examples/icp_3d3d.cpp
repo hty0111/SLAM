@@ -75,7 +75,7 @@ int main()
             continue;
         cv::Point2d p1 = pixel2camera(key_points1[m.queryIdx].pt, K);
         cv::Point2d p2 = pixel2camera(key_points2[m.trainIdx].pt, K);
-        double d1 = depth1 / 5000.0;
+        double d1 = depth1 / 5000.0;    // 相机Z坐标轴上的单位1对应深度图的像素值为5000
         double d2 = depth2 / 5000.0;
         pts1.emplace_back(p1.x * d1, p1.y * d1, d1);
         pts2.emplace_back(p2.x * d2, p2.y * d2, d2);

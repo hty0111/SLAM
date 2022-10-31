@@ -76,7 +76,7 @@ int main()
         ushort depth = depth_img1.at<ushort>(key_points1[m.queryIdx].pt);
         if (depth == 0)
             continue;
-        double d = depth / 5000.0;   // TODO 归一化？乘个系数而已
+        double d = depth / 5000.0;   // 相机Z坐标轴上的单位1对应深度图的像素值为5000
         cv::Point2d p_camera = pixel2camera(key_points1[m.queryIdx].pt, K);
         pts_3d.emplace_back(p_camera.x * d, p_camera.y * d, d);
         pts_2d.push_back(key_points2[m.trainIdx].pt);
