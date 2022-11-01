@@ -177,11 +177,12 @@ void bundleAdjustmentGaussNewton(
         cost = 0;
         for (int i = 0; i < points_3d.size(); ++i)
         {
-            Eigen::Vector3d p_camera = pose * points_3d[i];
-            double x = p_camera[0], y = p_camera[1], z = p_camera[2];
+            Eigen::Vector3d p_camera = pose * points_3d[i]; // 世界坐标系转相机坐标系
 
-            Eigen::Vector2d p_pixel(fx * x / z + cx, fy * y / z + cy);
-            Eigen::Vector2d error = points_2d[i] - p_pixel;
+            double x = p_camera[0], y = p_camera[1], z = p_camera[2];
+            Eigen::Vector2d p_pixel(fx * x / z + cx, fy * y / z + cy);  // 相机坐标系转像素坐标系
+
+            Eigen::Vector2d error = points_2d[i] - p_pixel; // 重投影误差
             cost += error.squaredNorm();
 
             Eigen::Matrix<double, 2, 6> J;  // Jacobian

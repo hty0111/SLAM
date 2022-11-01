@@ -4,7 +4,8 @@ project(Project)
 set(CMAKE_BUILD_TYPE Release)
 ADD_COMPILE_OPTIONS(-std=c++11)
 ADD_COMPILE_OPTIONS(-std=c++14)
-set(CMAKE_CXX_FLAGS "-std=c++14 -O3")
+ADD_COMPILE_OPTIONS(-std=c++17)
+set(CMAKE_CXX_FLAGS "-std=c++17 -O3")
 
 
 if (POLICY CMP0072)
