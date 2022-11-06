@@ -278,6 +278,7 @@ public:
         _jacobianOplusXi <<
             -fx / z, 0, fx * x / (z * z), fx * x * y / (z * z), -fx - fx * x * x / (z * z), fx * y / z,
             0, -fy / z, fy * y / (z * z), fy + fy * y * y / (z * z), fy * x * y / (z * z), fy * x / z;
+//        std::cout << "2" << std::endl;
     }
 
     bool read(std::istream &in) override {}

@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.0)
 project(Project)
 
 set(CMAKE_BUILD_TYPE Release)
-ADD_COMPILE_OPTIONS(-std=c++11)
-ADD_COMPILE_OPTIONS(-std=c++14)
+#ADD_COMPILE_OPTIONS(-std=c++11)
+#ADD_COMPILE_OPTIONS(-std=c++14)
 ADD_COMPILE_OPTIONS(-std=c++17)
-set(CMAKE_CXX_FLAGS "-std=c++17 -O3")
+set(CMAKE_CXX_FLAGS "-std=c++17 -O0")
 
 
 if (POLICY CMP0072)
