@@ -2,7 +2,6 @@
 !.git
 !.gitignore
 build
-*make*
-!CMakeLists.txt
+cmake-build-debug
 3rdparty
 *slambook*
