@@ -148,6 +148,7 @@ void solveBA(BALProblem & bal_problem)
     double * cameras = bal_problem.mutable_cameras();
     const double * observations = bal_problem.observations(); // [2 * n]
 
+    // 位姿参数9个，特征点参数3个
     typedef g2o::BlockSolver<g2o::BlockSolverTraits<9, 3>> BlockSolverType;
     typedef g2o::LinearSolverCSparse<BlockSolverType::PoseMatrixType> LinearSolverType;
 
