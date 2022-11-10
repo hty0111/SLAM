@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.0)
 project(Project)
 
 set(CMAKE_BUILD_TYPE Release)
-ADD_COMPILE_OPTIONS(-std=c++11)
 ADD_COMPILE_OPTIONS(-std=c++14)
 set(CMAKE_CXX_FLAGS "-std=c++11 -O3")
 
@@ -17,7 +16,7 @@ include_directories(
         ${PCL_INCLUDE_DIRS}
 )
 
-#add_definitions(${PCL_DEFINITIONS})
+add_definitions(${PCL_DEFINITIONS})
 
 add_executable(joinMap joinMap.cpp)
 target_link_libraries(
