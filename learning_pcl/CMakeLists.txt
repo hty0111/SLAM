@@ -21,3 +21,16 @@ target_link_libraries(matrix_transform ${PCL_LIBRARIES})
 
 add_executable(normal_estimation src/normal_estimation.cpp)
 target_link_libraries(normal_estimation ${PCL_LIBRARIES})
+
+add_executable(moment_of_inertia src/moment_of_inertia.cpp)
+target_link_libraries(moment_of_inertia ${PCL_LIBRARIES})
+
+add_executable(voxel_grid src/voxel_grid.cpp)
+target_link_libraries(voxel_grid ${PCL_LIBRARIES})
+
+add_executable(statistical_outlier src/statistical_outlier.cpp)
+target_link_libraries(statistical_outlier ${PCL_LIBRARIES})
+
+add_executable(segmentation src/segmentation.cpp)
+target_link_libraries(segmentation ${PCL_LIBRARIES})
+
