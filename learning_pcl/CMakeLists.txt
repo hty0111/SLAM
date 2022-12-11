@@ -34,3 +34,5 @@ target_link_libraries(statistical_outlier ${PCL_LIBRARIES})
 add_executable(segmentation src/segmentation.cpp)
 target_link_libraries(segmentation ${PCL_LIBRARIES})
 
+add_executable(resampling src/resampling.cpp)
+target_link_libraries(resampling ${PCL_LIBRARIES})
