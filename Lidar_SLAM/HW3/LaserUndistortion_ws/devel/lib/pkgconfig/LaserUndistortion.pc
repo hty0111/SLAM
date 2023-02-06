@@ -1,0 +1,8 @@
+prefix=/home/hty/Desktop/SLAM/Lidar_SLAM/HW3/LaserUndistortion_ws/devel
+
+Name: LaserUndistortion
+Description: Description of LaserUndistortion
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

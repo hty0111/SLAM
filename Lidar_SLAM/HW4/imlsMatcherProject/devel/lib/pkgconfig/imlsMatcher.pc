@@ -1,0 +1,8 @@
+prefix=/home/hty/Desktop/SLAM/Lidar_SLAM/HW4/imlsMatcherProject/devel
+
+Name: imlsMatcher
+Description: Description of imlsMatcher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/hty/Desktop/SLAM/Lidar_SLAM/HW7/OccupancyMappingProject/devel
+
+Name: occupancy_mapping
+Description: Description of occupancy_mapping
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs

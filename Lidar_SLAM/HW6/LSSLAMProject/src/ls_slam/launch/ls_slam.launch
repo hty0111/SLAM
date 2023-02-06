@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="ls_slam" type="ls_slam" name="ls_slam" output="screen" />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ls_slam)/rviz/rviz.rviz" />
+</launch>

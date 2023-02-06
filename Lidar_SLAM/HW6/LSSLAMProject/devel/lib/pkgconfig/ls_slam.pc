@@ -1,0 +1,8 @@
+prefix=/home/hty/Desktop/SLAM/Lidar_SLAM/HW6/LSSLAMProject/devel
+
+Name: ls_slam
+Description: Description of ls_slam
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
